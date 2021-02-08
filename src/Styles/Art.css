@@ -1,0 +1,297 @@
+.fullspace-master-div {
+  background-color: #dfdee3;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.master-div {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f3f5f4), color-stop(30%, #f3f5f4), color-stop(75%, #d2d2d4), color-stop(92%, #d2d2d4), color-stop(98%, #373028), to(#373028));
+  background-image: linear-gradient(#f3f5f4, #f3f5f4 30%, #d2d2d4 75%, #d2d2d4 92%, #373028 98%, #373028 100%);
+  color: white;
+  border-right: solid 1px;
+  border-left: solid 1px;
+  width: 95%;
+  height: 93%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75% 25%;
+      grid-template-columns: 75% 25%;
+  -ms-grid-rows: 7% 68% 19% 6%;
+      grid-template-rows: 7% 68% 19% 6%;
+      grid-template-areas: "hd hd" "main main" "plaque ." "ft ft";
+}
+
+.top-white-space-div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: hd;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#373028), color-stop(0.5%, #d2d2d4), color-stop(70%, #d2d2d4), color-stop(75%, #ebecf1), to(#ebecf1));
+  background-image: linear-gradient(#373028 0%, #d2d2d4 0.5%, #d2d2d4 70%, #ebecf1 75%, #ebecf1 100%);
+}
+
+.art {
+  color: none;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10%, 25%))[4];
+      grid-template-columns: repeat(4, minmax(10%, 25%));
+  -ms-grid-rows: (45%)[2];
+      grid-template-rows: repeat(2, 45%);
+  grid-gap: 5%;
+  width: 90.5%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+img {
+  width: 100%;
+  max-height: 95%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  cursor: pointer;
+}
+
+.quad-image {
+  width: 85%;
+  max-height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@-moz-document url-prefix() {
+  .quad-image {
+    max-height: 100%;
+  }
+}
+
+.b {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  max-height: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+.larger-image {
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.d {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+.plaque-wording-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  position: relative;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: plaque;
+  border-bottom: 14vh solid #eeeff4;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  height: 0;
+  width: 85%;
+  -webkit-box-shadow: 0px 9px 10px -9px #6e6c69;
+          box-shadow: 0px 9px 10px -9px #6e6c69;
+}
+
+.plaque-wording-div .plaque-stand-div .courtesy-h1 {
+  font-family: "Archivo Narrow", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 3.6vh;
+  color: #373028;
+  padding: 0;
+  margin: 0;
+  margin-top: 1%;
+  margin-left: 3.5%;
+}
+
+.plaque-wording-div .plaque-stand-div .be-kind-p {
+  font-family: "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 2vh;
+  color: #373028;
+  margin-left: 2.6%;
+  margin-top: 1%;
+}
+
+.plaque-wording-div .plaque-stand-div .many-untitled-p {
+  font-family: "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 2vh;
+  color: #373028;
+  margin-left: 1.8%;
+  margin-top: -1%;
+}
+
+.plaque-wording-div .letter-box-div {
+  position: relative;
+  height: 50%;
+  max-height: 50%;
+  max-width: 80%;
+  border: none;
+  margin: 3%;
+}
+
+.bottom-white-space-div {
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6ee), color-stop(15%, #e6e6ee), color-stop(25%, #d6d7dc), color-stop(99%, #d6d7dc));
+  background-image: linear-gradient(#e6e6ee, #e6e6ee 15%, #d6d7dc 25%, #d6d7dc 99%);
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: ft;
+}
+
+@media screen and (max-width: 600px) {
+  .master-div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1% 50% 100% 1%;
+        grid-template-rows: 1% 50% 100% 1%;
+    padding: 0px;
+    margin: 0px;
+        grid-template-areas: "hd" "plaque" "main" "ft";
+  }
+  .top-white-space-div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: hd;
+    height: 10px;
+    border: 5px solid black;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#373028), color-stop(0.5%, #d2d2d4), color-stop(70%, #d2d2d4), color-stop(75%, #ebecf1), to(#ebecf1));
+    background-image: linear-gradient(#373028 0%, #d2d2d4 0.5%, #d2d2d4 70%, #ebecf1 75%, #ebecf1 100%);
+  }
+  .plaque-wording-div {
+    color: orange;
+    border: solid;
+    height: 16em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    position: relative;
+    -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: plaque;
+    width: 85%;
+    -webkit-box-shadow: 0px 9px 10px -9px #6e6c69;
+            box-shadow: 0px 9px 10px -9px #6e6c69;
+  }
+  .plaque-wording-div .plaque-stand-div .courtesy-h1 {
+    font-family: "Archivo Narrow", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 3.6vh;
+    color: #373028;
+    padding: 0;
+    margin: 0;
+  }
+  .plaque-wording-div .plaque-stand-div .be-kind-p {
+    font-family: "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 2vh;
+    color: #373028;
+    margin-left: 2.6%;
+    margin-top: 1%;
+  }
+  .plaque-wording-div .plaque-stand-div .many-untitled-p {
+    font-family: "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 2vh;
+    color: #373028;
+    margin-left: 1.8%;
+    margin-top: -1%;
+  }
+  .art {
+    border: solid;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: main;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-gap: 0.5%;
+    width: 90.5%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .b {
+    border: solid;
+    color: pink;
+    max-height: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    cursor: pointer;
+  }
+  img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=Art.css.map */

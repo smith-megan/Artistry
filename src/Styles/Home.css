@@ -1,0 +1,103 @@
+button {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+  font-family: "Archivo Narrow", "Fira Sans", "Droid Sans", "Helvetica Neue";
+  font-size: 2vw;
+  cursor: pointer;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+button:hover {
+  color: #828383;
+}
+
+.parent-div {
+  width: 70%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#828383), color-stop(#818182), to(#7b7a78));
+  background-image: linear-gradient(#828383, #818182, #7b7a78);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 13% 27% 10%;
+      grid-template-columns: 50% 13% 27% 10%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  -webkit-box-shadow: 0px 7px 8px 3px #6e6c69;
+          box-shadow: 0px 7px 8px 3px #6e6c69;
+}
+
+.first-div {
+  background-image: url("../Assets/steps.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.second-div {
+  height: 100%;
+}
+
+.second-div .step-button {
+  font-size: 3vw;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 22%;
+  left: 47.5%;
+  height: 7%;
+  border: none;
+}
+
+.third-div {
+  overflow: hidden;
+}
+
+.third-div .third-div-title {
+  color: white;
+  font-family: "Archivo Narrow", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 3.3vw;
+  margin-top: 2.5%;
+  margin-bottom: -3%;
+}
+
+.third-div p {
+  border: none;
+  font-family: "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #f0f0f0;
+  font-size: 2vh;
+}
+
+.third-div .enter-button {
+  padding: 0px;
+  border: none;
+}
+
+.fourth-div {
+  display: -ms-grid;
+  display: grid;
+  padding: 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.fourth-div .fourth-div-number {
+  margin: 28%;
+  padding-top: 55%;
+  color: white;
+  font-family: "Bebas Neue", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 2.3vw;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+/*# sourceMappingURL=Home.css.map */

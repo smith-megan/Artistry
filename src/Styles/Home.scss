@@ -1,0 +1,85 @@
+button {
+  background-color: transparent;
+  box-shadow: none;
+  color: white;
+  font-family: "Archivo Narrow", "Fira Sans", "Droid Sans", "Helvetica Neue";
+  font-size: 2vw;
+  cursor: pointer;
+  transition: 1.5s;
+  &:hover {
+    color: #828383;
+  }
+}
+
+.parent-div {
+  width: 70%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(#828383, #818182, #7b7a78);
+  display: grid;
+  grid-template-columns: 50% 13% 27% 10%;
+  grid-template-rows: 100%;
+  box-shadow: 0px 7px 8px 3px #6e6c69;
+}
+
+.first-div {
+  background-image: url("../Assets/steps.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.second-div {
+  height: 100%;
+  .step-button {
+    font-size: 3vw;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 22%;
+    left: 47.5%;
+    height: 7%;
+    border: none;
+  }
+}
+
+.third-div {
+  .third-div-title {
+    color: white;
+    font-family: "Archivo Narrow", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 3.3vw;
+    margin-top: 2.5%;
+    margin-bottom: -3%;
+  }
+
+  p {
+    border: none;
+    font-family: "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #f0f0f0;
+    font-size: 2vh;
+  }
+  .enter-button {
+    padding: 0px;
+    border: none;
+  }
+  overflow: hidden;
+}
+
+.fourth-div {
+  display: grid;
+  padding: 0;
+  align-items: end;
+  justify-content: space-around;
+  .fourth-div-number {
+    margin: 28%;
+    padding-top: 55%;
+    color: white;
+    font-family: "Bebas Neue", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 2.3vw;
+    transform: rotate(-90deg);
+  }
+}
